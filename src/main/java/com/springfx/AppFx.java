@@ -18,7 +18,6 @@ public class AppFx extends Application {
 
 	@Override
 	public void init() throws Exception {
-		System.out.println(123);
 		ApplicationContextInitializer<GenericApplicationContext> initializer = ac -> {
 			ac.registerBean(Application.class, () -> AppFx.this);
 			ac.registerBean(Parameters.class, this::getParameters);
