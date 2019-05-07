@@ -16,6 +16,11 @@ public class BiometricProxyServiceImpl implements BiometricService {
 	private int device_no;
 	
 
+	public BiometricProxyServiceImpl() {
+		super();
+		System.out.println(1);
+	}
+
 	public boolean connect(String ip_addr, int device_no) {
 		try {
 			this.ip_addr = ip_addr;
